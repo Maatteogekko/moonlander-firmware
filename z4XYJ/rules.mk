@@ -13,3 +13,4 @@ DYNAMIC_TAPPING_TERM_ENABLE = yes
 
 # --- custom starts here ---
 KEY_OVERRIDE_ENABLE = yes
+REPEAT_KEY_ENABLE = yes
