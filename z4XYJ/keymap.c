@@ -10,7 +10,13 @@ enum custom_keycodes {
   MAC_LOCK,
 };
 
+// --- custom starts here ---
+const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
 
+const key_override_t *key_overrides[] = {
+	&delete_key_override
+};
+// --- custom ends here ---
 
 enum tap_dance_codes {
   DANCE_0,
