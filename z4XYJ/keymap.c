@@ -15,7 +15,7 @@ const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC
 const key_override_t repeat_key_override = ko_make_basic(MOD_MASK_SHIFT, QK_REPEAT_KEY, QK_ALT_REPEAT_KEY);
 
 const key_override_t *key_overrides[] = {
-	&delete_key_override
+	&delete_key_override,
 	&repeat_key_override
 };
 // --- custom ends here ---
