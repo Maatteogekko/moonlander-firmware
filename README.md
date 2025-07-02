@@ -7,6 +7,7 @@ For a detailed guide, check out the full [blog post here](https://blog.zsa.io/or
 ## How it works
 
 Each time you run the GitHub Action, the workflow will:
+
 1. Fetch the latest changes made in Oryx.
 2. Merge them with any QMK features you've added in the source code.
 3. Build the firmware, incorporating modifications from both Oryx and your custom source code.
@@ -25,7 +26,7 @@ Each time you run the GitHub Action, the workflow will:
    - Edit `config.h`, `keymap.c` and `rules.mk` according to the [QMK documentation](https://github.com/qmk/qmk_firmware/tree/master/docs/features).
    - Commit and push to the **main** branch.
 5. You can continue editing your layout through Oryx:
-   - Make your changes in Oryx. 
+   - Make your changes in Oryx.
    - Optionally, add a description of your changes in the **Some notes about what you changed** field; if provided, this will be used as commit message.
    - Confirm changes by clicking the **Compile this layout** button.
 6. To build the firmware (including both Oryx and code modifications), rerun the GitHub Action. The firmware will be available for download in the action’s artifacts.
@@ -35,3 +36,7 @@ Each time you run the GitHub Action, the workflow will:
 ## Oryx Chrome extension
 
 To make building even easier, [@nivekmai](https://github.com/nivekmai) created an [Oryx Chrome extension](https://chromewebstore.google.com/detail/oryx-extension/bocjciklgnhkejkdfilcikhjfbmbcjal) to be able to trigger the GitHub Actions from inside Oryx itself.
+
+## Notes
+
+- If something does not compile/work properly check the [older docs](https://github.com/qmk/qmk_firmware/tree/eee0384167b965c60120e1222bc24c0b40cadac4/docs). We are using a fork of qmk_firmware after all.
