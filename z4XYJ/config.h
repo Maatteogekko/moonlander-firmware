@@ -28,9 +28,8 @@
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 60
 
 #define CAPS_LOCK_STATUS
-#define SERIAL_NUMBER "z4XYJ/aNG6j3"
+#define SERIAL_NUMBER "z4XYJ/x9MOmx"
 #define LAYER_STATE_8BIT
-#define HCS(report) host_consumer_send(record->event.pressed ? report : 0); return false
 
 #define RGB_MATRIX_STARTUP_SPD 60
 
