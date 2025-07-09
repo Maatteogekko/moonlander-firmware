@@ -11,12 +11,24 @@ enum custom_keycodes {
 };
 
 // --- custom starts here ---
-const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
 const key_override_t repeat_key_override = ko_make_basic(MOD_MASK_SHIFT, QK_REPEAT_KEY, QK_ALT_REPEAT_KEY);
+const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
+const key_override_t round_bracket_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_LPRN, KC_RPRN);
+const key_override_t square_bracket_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_LBRC, KC_RBRC);
+const key_override_t curly_bracket_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_LCBR, KC_RCBR);
+const key_override_t angle_bracket_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_RABK, KC_LABK);
+const key_override_t hash_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_HASH, KC_ASTR);
+const key_override_t circumflex_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_CIRC, KC_TILD);
 
 const key_override_t **key_overrides = (const key_override_t *[]){
 	&delete_key_override,
 	&repeat_key_override,
+  &round_bracket_key_override,
+  &square_bracket_key_override,
+  &curly_bracket_key_override,
+  &angle_bracket_key_override,
+  &hash_key_override,
+  &circumflex_key_override,
   NULL
 };
 // --- custom ends here ---
