@@ -20,7 +20,7 @@ const key_override_t angle_bracket_key_override = ko_make_basic(MOD_MASK_SHIFT, 
 const key_override_t hash_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_HASH, KC_ASTR);
 const key_override_t circumflex_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_CIRC, KC_TILD);
 
-const key_override_t **key_overrides = (const key_override_t *[]){
+const key_override_t *key_overrides[] = {
 	&delete_key_override,
 	&repeat_key_override,
   &round_bracket_key_override,
@@ -29,7 +29,6 @@ const key_override_t **key_overrides = (const key_override_t *[]){
   &angle_bracket_key_override,
   &hash_key_override,
   &circumflex_key_override,
-  NULL
 };
 // --- custom ends here ---
 
